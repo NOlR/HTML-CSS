@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				background-color: #0086B3;
+			}
+			.bzh{
+				width: 100px;
+				height: 100px;
+				background-color: #2F0C38;
+				margin-bottom: 20px;
+			}
+			
+			.wrapper{
+				background-color: pink;
+				display: flex;	/* 弹性 */
+				flex-direction: row;		/* 排列方向 */
+				/* justify-content:  space-between;	 对齐方式 */
+				flex-wrap: wrap;		/* wrap换行 no-wrap不换行 */
+				align-items: center;	/* 交叉轴排列方式 */
+				width: 500px;
+			}
+			.tx{
+				width: 100px;
+				height: 100px;
+				background-color: #2F0C38;
+				margin-bottom: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 弹性盒模型 与 标准盒模型区别
+			排列方式不一样
+				主轴:	默认元素在主轴上从左向右排列
+					flex-direction:	/* 排列方向 */
+						row:	x轴
+						column:		y轴
+								-reverse:	相反
+							
+					justify-content: 	/* 对齐方式	*/
+							space-around:	环绕居中对齐
+							space-between:	两端对齐
+							center：		居中
+							flex-start:		子元素从头开始排列
+							flex-end:		子元素从尾开始排列
+							
+					flex-wrap:	换行
+						wrap换行 
+						no-wrap不换行 
+				交叉轴:
+						于主轴交叉的轴
+							align-items:决定交叉轴排列方式	(单行)
+								flex-start:	子元素从头开始排列
+								flex-end:	子元素从尾开始排列
+								center:		居中
+								
+							align-content: 有多行生效		(多行)
+								space-between
+								center
+								跟主轴类似
+				-->
+			<div class="box">
+				<div class="bzh"></div>
+				<div class="bzh"></div>
+			</div>
+			
+			<div class="wrapper">
+				<div class="tx">1</div>
+				<div class="tx">2</div>
+				<div class="tx">3</div>
+				<div class="tx">4</div>
+			</div>
+	</body>
+</html>

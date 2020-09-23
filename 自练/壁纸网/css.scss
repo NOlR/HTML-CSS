@@ -1,0 +1,296 @@
+  .icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	ul,li{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	a{
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+		}
+	.w1400{
+		width: 1400px;
+	}
+	
+	
+	.head{
+		margin: 0 auto;
+		background-color: black;
+		.headleft{
+			display: inline-block;
+			position: relative;
+			vertical-align: middle;
+			a{
+				.webname{
+					display: inline-block;
+					color: white;
+					margin-left: 120px;
+					line-height: 55px;
+					font-size: 35px;
+					font-weight: 800;
+					vertical-align: middle;
+				}
+			}
+			
+			.nav{
+				display: inline-block;
+				vertical-align: middle;
+				
+				
+					li{
+						display: inline-block;
+						width: 70px;
+						height: 54px;
+						text-align: center;
+						margin: 0;
+						padding: 0;
+						list-style: none;
+						float: left;
+						line-height: 54px;
+						
+						.font{
+							display: inline-block;
+							color: white;
+							width: 70px;
+							height: 54px;
+							&:hover{
+								background-color: #333;
+							}
+							
+						}
+					
+						.money{
+							color: orange;
+						}
+						
+						
+					}
+					.fenlei{
+						position: relative;
+						.fenleibox{
+							display: none;
+							position: absolute;
+							width: 200px;
+							height: 200px;
+							background-color:#fff;
+							box-shadow: 0 0 5px #333;
+							z-index: 1;
+							
+							li{
+								
+								a{
+									color: #333;
+									font-size: 15px;
+									&:hover{
+										color:#63b504 ;
+									}
+								}
+							}
+						}
+						&:hover>.fenleibox{
+							display: block;
+						}
+					}
+					.chicun{
+						position: relative;
+						.chicunbox{
+							display: none;
+							position: absolute;
+							width: 300px;
+							height: 150px;
+							background-color:#fff;
+							box-shadow: 0 0 5px #333;
+							z-index: 1;
+							
+							li{
+								margin-right: 20px;
+								a{
+									color: #333;
+									font-size: 15px;
+									&:hover{
+										color:#63b504 ;
+									}
+								}
+							}
+						}
+						&:hover>.chicunbox{
+							display: block;
+						}
+					}
+				
+					
+				
+					
+				
+				
+				&::after{
+					content: "";
+					display: block;
+					clear: both;
+				}
+			}
+			.sousuokuang{
+				position: absolute;
+				left: 700px;
+				top: 14px;
+				margin-top: 0;
+				display: inline-block;
+				
+				input{
+					height: 30px;
+					width: 250px;
+					margin: 0;
+					padding: 0;
+					border: 0px;
+					background-color: #333333;
+					color: #71767a;
+					
+				}
+				}
+				
+					#btn{
+							display: none;
+						}
+					#btnsousuo{
+						position: absolute;
+						left: 749px;
+						top: 14px;
+						width: 30px;
+						height: 30px;
+						background-color: #333333;
+						margin-left: 200px;
+						text-align: center;
+						.tubiao1{
+							width: 20px;
+							height: 20px;
+							padding-top: 5px;
+							
+						}
+					
+				}
+			
+			
+		}
+		
+		.headright{
+			display: inline-block;
+			margin-left: 400px;
+			vertical-align: middle;
+			line-height: 35px;
+			.reg{
+				display: inline-block;
+				width: 100px;
+				height: 35px;
+				background-color: #63b504;
+				color: white;
+				text-align: center;
+				border-radius: 2px ;
+				
+				&:hover{
+					background-color: #5aa405;
+					transition: all 0.5s linear;
+				}
+				
+			}
+			.login{
+				margin-left: 20px;
+				display: inline-block;
+				width: 75px;
+				height: 34px;
+				color:white;
+				background-color: black;
+				border: 1px solid white;
+				text-align: center;
+				border-radius: 2px ;
+				
+				&:hover{
+					background-color: white;
+					color:black;
+					transition: all 0.5s linear;
+				}
+			}
+		}
+	}
+	
+	.carousel{
+		width: 1300px;
+		height: 600px;
+		margin: 10px auto;
+		overflow: hidden;
+		position: relative;
+		.boxbtn{
+			position: absolute;
+			width: 100px;
+			height: 20px;
+			left: 0;
+			top:550px;
+			right: 0;
+			bottom: 0;
+			margin: 0 auto;
+			text-align: center;
+			
+			.casbtn{
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				background-color: #333;
+				border-radius: 10px;
+				transition: all 0.5s linear;
+			}
+		}
+		
+		input{
+			display: none;
+		}
+		.rad1:checked ~ .picbox{
+			margin-left: 0px;
+		}
+		.rad1:checked ~ .boxbtn label:nth-of-type(1){
+			background-color: #63b504;	
+			
+		}
+		.rad2:checked ~ .picbox{
+			margin-left: -1300px;
+		}
+		.rad2:checked ~ .boxbtn label:nth-of-type(2){
+			background-color: #63b504;	
+			
+		}
+		.rad3:checked ~ .picbox{
+			margin-left: -2600px;
+		}
+		.rad3:checked ~ .boxbtn label:nth-of-type(3){
+			background-color: #63b504;	
+			
+		}
+		.rad4:checked ~ .picbox{
+			margin-left: -3900px;
+		}
+		.rad4:checked ~ .boxbtn label:nth-of-type(4){
+			background-color: #63b504;	
+			
+		}
+		.picbox{
+			width: 5200px;
+			height: 600px;
+			transition: all 0.5s linear;
+
+			img{
+				width: 1300px;
+				height: 600px;
+				object-fit:cover;
+				float: left;
+				
+			}
+		}
+	}

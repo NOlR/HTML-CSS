@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.monitor{
+				perspective: 1000px;
+			}
+			.cube{
+				width: 200px;
+				height: 200px;
+				background-color: black;
+				margin: 100px auto;
+				transform-style: preserve-3d;
+				animation: xz 5s infinite linear;
+			}
+			.square{
+				width: 200px;
+				height: 200px;
+				position: absolute;
+			}
+			.square:nth-child(1){
+				background-color:orange;
+				transform: rotateY(0) translateZ(100px) ;
+			}
+			.square:nth-child(2){
+				background-color:yellow;
+				transform: rotateY(90deg) translateZ(100px) ;
+			}
+			.square:nth-child(3){
+				background-color:green;
+				transform: rotateY(180deg) translateZ(100px) ;
+			}
+			.square:nth-child(4){
+				background-color:royalblue;
+				transform: rotateY(270deg) translateZ(100px) ;
+			}
+			.square:nth-child(5){
+				background-color:purple;
+				transform: rotateX(90deg) translateZ(100px) ;
+			}
+			.square:nth-child(6){
+				background-color:red;
+				transform: rotateX(90deg) translateZ(-100px) ;
+			}
+			@keyframes xz{
+				0%{
+					transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+				}
+				100%{
+					transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="monitor">
+			<div class="cube">
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+				<div class="square"></div>
+			</div>
+		</div>
+	</body>
+</html>
+<!-- 正n边形
+360/n*(第几个子元素-1) -->

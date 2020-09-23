@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 伪类权重为10*/
+			.hov{
+				width: 100px;
+				height: 100px;
+				background-color: #0000FF;
+			}
+			/* 伪类样式
+				hover: 鼠标悬停
+				
+				a标签
+				active: 鼠标触发(a标签点击不松开) 
+				link:一个链接从未被访问过的样子
+				visited:访问过后的样式
+				
+				input标签
+				focus:input框焦点获取
+				check:单选框或复选框选中时候的状态
+				*/
+			   
+/* 			   伪元素是一种元素(位的元素)
+			   伪类是一种效果 */
+			.hov:hover{
+				background-color: #CCC;
+			}
+			a:active{
+				color: red;
+			}
+			a:link{
+				color: green;
+			}
+			a:visited{
+				color: #57C8E7;
+			}
+			input:focus{
+				background-color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="hov"></div>
+		<a href="#">123</a>
+		<hr>
+		<input type="text">
+		<input type="text">
+		<hr >
+		单选按钮轮播图
+		<style>
+			.show{
+				width: 1200px;
+				height: 400px;
+				overflow:hidden;
+				
+			}
+			.banner,.banner>li{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			.banner{
+				width: 3600px;
+				height: 400px;
+			}
+			.banner>li{
+				width: 1200px;
+				height: 100%;
+				float: left;
+				
+			}
+			.banner>.one{
+				background-color: #272A38;
+			}
+			.banner>.two{
+				background-color: #57C8E7;
+			}
+			.banner>.three{
+				background-color: #2f0c38;
+			}
+			.page1:checked~.banner{
+				margin-left: 0px;
+			}
+			.page2:checked~.banner{
+				margin-left: -1200px;
+			}
+			.page3:checked~.banner{
+				margin-left: -2400px;
+			}
+		</style>
+		
+		<div class="show">
+			1<input class="page1" type="radio" name="pic" checked />
+			2<input class="page2" type="radio" name="pic" />
+			3<input class="page3" type="radio" name="pic" />
+			<ul class="banner">
+				<li class="one">1</li>
+				<li class="two">2</li>
+				<li class="three">3</li>
+			</ul>
+		</div>
+	</body>
+</html>

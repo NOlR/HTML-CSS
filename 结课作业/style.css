@@ -1,0 +1,404 @@
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden; }
+
+.w1200 {
+  width: 1200px; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.head {
+  margin: 10px auto; }
+  .head .left {
+    display: inline-block; }
+    .head .left .logo {
+      width: 120px; }
+    .head .left .outnav {
+      display: inline-block;
+      height: 20px;
+      margin-left: 30px; }
+      .head .left .outnav .innav {
+        float: left;
+        margin-right: 20px;
+        font-size: 13px;
+        position: relative; }
+        .head .left .outnav .innav:hover {
+          border-bottom: 2px solid black; }
+        .head .left .outnav .innav:hover > .sonnav {
+          display: block; }
+        .head .left .outnav .innav .sonnav {
+          position: absolute;
+          display: none;
+          z-index: 5; }
+          .head .left .outnav .innav .sonnav .con {
+            margin-top: 10px; }
+            .head .left .outnav .innav .sonnav .con:hover {
+              color: #CCC; }
+  .head .right {
+    display: inline-block;
+    float: right;
+    position: relative; }
+    .head .right span {
+      display: inline-block;
+      font-size: 13px; }
+    .head .right .ck1 {
+      display: none; }
+    .head .right .version {
+      vertical-align: middle;
+      margin-right: 20px;
+      border-bottom: 2px solid transparent; }
+    .head .right .suoyoujieshao {
+      width: 1100px;
+      background-color: #ebebeb;
+      position: absolute;
+      z-index: 4;
+      left: -750px; }
+      .head .right .suoyoujieshao dl {
+        float: left;
+        margin-left: 40px; }
+        .head .right .suoyoujieshao dl dt {
+          font-size: 14px;
+          margin-left: 40px;
+          color: black;
+          font-weight: 600; }
+        .head .right .suoyoujieshao dl a {
+          display: block;
+          line-height: 50px; }
+          .head .right .suoyoujieshao dl a dd {
+            display: inline;
+            font-size: 12px;
+            font-weight: 400;
+            border-bottom: 1px solid transparent; }
+            .head .right .suoyoujieshao dl a dd:hover {
+              border-bottom: 1px solid #CCC; }
+    .head .right .denglu {
+      width: 35px;
+      height: 35px;
+      vertical-align: middle; }
+    .head .right .sousuo {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 20px; }
+    .head .right .gouwuche {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 20px; }
+    .head .right .ck1:checked ~ .suoyoujieshao {
+      display: none; }
+    .head .right a:hover > span {
+      border-bottom: 2px solid black; }
+    .head .right a:hover > .version {
+      border-bottom: 2px solid black; }
+
+.carousel {
+  margin: 15px auto;
+  overflow: hidden;
+  position: relative; }
+  .carousel input {
+    display: none; }
+  .carousel .check1:checked ~ .pic {
+    margin-left: 0px; }
+  .carousel .check1:checked ~ .pic > .button > .btn1 {
+    background-color: red;
+    background-image: radial-gradient(white 0px, black 0px); }
+  .carousel .check2:checked ~ .pic {
+    margin-left: -1200px; }
+  .carousel .check2:checked ~ .pic > .button > .btn2 {
+    background-image: radial-gradient(white 0px, black 0px); }
+  .carousel .pic {
+    width: 2400px;
+    transition: 1s ease; }
+    .carousel .pic .button {
+      width: 120px;
+      height: 50px;
+      position: absolute;
+      top: 400px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+      z-index: 1; }
+      .carousel .pic .button .btn1, .carousel .pic .button .btn2 {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-color: #CCC;
+        border-radius: 8px;
+        margin-top: 20px;
+        background-image: radial-gradient(white 5px, black 6px); }
+    .carousel .pic .inpic1 {
+      width: 1200px;
+      height: 100%;
+      float: left;
+      position: relative; }
+      .carousel .pic .inpic1 img {
+        width: 1200px; }
+      .carousel .pic .inpic1 .text1 {
+        position: absolute;
+        top: 120px;
+        left: 70px; }
+        .carousel .pic .inpic1 .text1 h2 {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          font-size: 46px;
+          font-weight: 600;
+          line-height: 56px; }
+          .carousel .pic .inpic1 .text1 h2 span {
+            font-weight: 500; }
+        .carousel .pic .inpic1 .text1 h6 {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          line-height: 47px;
+          font-size: 15px;
+          font-weight: 400; }
+        .carousel .pic .inpic1 .text1 .book {
+          display: block;
+          width: 140px;
+          line-height: 40px;
+          background-color: black;
+          color: white;
+          text-align: center; }
+          .carousel .pic .inpic1 .text1 .book:hover > span {
+            border-bottom: 2px solid white; }
+    .carousel .pic .inpic2 {
+      width: 1200px;
+      height: 100%;
+      float: left;
+      position: relative; }
+      .carousel .pic .inpic2 img {
+        width: 1200px; }
+      .carousel .pic .inpic2 .text2 {
+        position: absolute;
+        top: 120px;
+        left: 70px; }
+        .carousel .pic .inpic2 .text2 h2 {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          font-size: 46px;
+          font-weight: 600; }
+          .carousel .pic .inpic2 .text2 h2 span {
+            font-weight: 400; }
+        .carousel .pic .inpic2 .text2 h6 {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          font-size: 15px;
+          font-weight: 400;
+          width: 500px;
+          height: 80px;
+          padding-top: 20px; }
+        .carousel .pic .inpic2 .text2 .book {
+          display: block;
+          width: 140px;
+          line-height: 40px;
+          background-color: black;
+          color: white;
+          text-align: center; }
+          .carousel .pic .inpic2 .text2 .book:hover > span {
+            border-bottom: 2px solid white; }
+
+.firstBanner {
+  margin: 40px auto; }
+  .firstBanner .Bone {
+    display: inline-block;
+    width: 280px;
+    float: left;
+    margin-right: 25px; }
+    .firstBanner .Bone img {
+      width: 280px;
+      height: 170px; }
+    .firstBanner .Bone .down {
+      margin-top: 20px; }
+      .firstBanner .Bone .down h2 {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 20px; }
+      .firstBanner .Bone .down span {
+        font-size: 14px;
+        display: block; }
+      .firstBanner .Bone .down p {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        line-height: 35px;
+        color: #0067b8;
+        font-weight: 600;
+        border-bottom: 2px solid transparent; }
+      .firstBanner .Bone .down a:hover > p {
+        border-bottom: 2px solid #0067b8; }
+  .firstBanner .Bone:nth-of-type(4) {
+    margin-right: 0px; }
+  .firstBanner::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.buy {
+  margin: 40px auto;
+  height: 450px;
+  background: url(./img/buy.jpg) no-repeat 0 0/contain;
+  position: relative; }
+  .buy .buybox {
+    position: absolute;
+    top: 120px;
+    left: 70px; }
+    .buy .buybox h2 {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 46px;
+      font-weight: 600;
+      line-height: 56px; }
+    .buy .buybox p {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      line-height: 47px;
+      font-size: 15px;
+      font-weight: 400; }
+    .buy .buybox .buuy {
+      display: block;
+      width: 140px;
+      line-height: 40px;
+      background-color: black;
+      color: white;
+      text-align: center; }
+      .buy .buybox .buuy:hover > span {
+        border-bottom: 2px solid white; }
+
+.where {
+  font-size: 25px;
+  margin: 0 auto;
+  font-weight: 600; }
+
+.seconeBanner {
+  margin: 20px auto; }
+  .seconeBanner .Bone {
+    display: inline-block;
+    width: 280px;
+    float: left;
+    margin-right: 25px; }
+    .seconeBanner .Bone img {
+      width: 280px;
+      height: 170px; }
+    .seconeBanner .Bone .down {
+      margin-top: 20px; }
+      .seconeBanner .Bone .down h2 {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 20px; }
+      .seconeBanner .Bone .down span {
+        font-size: 14px;
+        display: block;
+        margin-top: 5px; }
+      .seconeBanner .Bone .down p {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        line-height: 35px;
+        color: #0067b8;
+        font-weight: 600;
+        border-bottom: 2px solid transparent; }
+      .seconeBanner .Bone .down a:hover > p {
+        border-bottom: 2px solid #0067b8; }
+    .seconeBanner .Bone:nth-of-type(4) {
+      margin-right: 0px; }
+  .seconeBanner::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.introduction {
+  margin: 0 auto; }
+  .introduction .guanzhu {
+    font-size: 18px;
+    font-weight: 200;
+    vertical-align: middle; }
+  .introduction .weixin, .introduction .weibo {
+    margin-left: 5px;
+    width: 35px;
+    height: 35px;
+    vertical-align: middle; }
+
+.bottom {
+  width: 100%;
+  padding: 1px;
+  margin: 20px auto;
+  background-color: #f2f2f2; }
+  .bottom .bottomTop {
+    margin-left: 100px; }
+    .bottom .bottomTop .bottomcon {
+      float: left;
+      margin-right: 80px; }
+      .bottom .bottomTop .bottomcon dl {
+        font-size: 14px;
+        font-weight: 600;
+        color: #616161; }
+      .bottom .bottomTop .bottomcon a {
+        display: block;
+        margin-bottom: 20px; }
+        .bottom .bottomTop .bottomcon a dt {
+          display: inline;
+          font-size: 12px;
+          color: #616161;
+          border-bottom: 1px solid transparent; }
+        .bottom .bottomTop .bottomcon a:hover > dt {
+          border-bottom: 1px solid #CCCCCC; }
+    .bottom .bottomTop::after {
+      content: "";
+      display: block;
+      clear: both; }
+  .bottom .bottomdown {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .bottom .bottomdown .zh {
+      margin-left: 100px;
+      vertical-align: middle;
+      font-size: 12px;
+      color: #616161;
+      float: left;
+      margin-right: 200px; }
+    .bottom .bottomdown .bottomdowntxt {
+      display: inline-block;
+      vertical-align: middle; }
+      .bottom .bottomdown .bottomdowntxt a li {
+        font-size: 12px;
+        color: #616161;
+        float: left;
+        margin-left: 20px;
+        border-bottom: 1px solid transparent; }
+      .bottom .bottomdown .bottomdowntxt a:hover > li {
+        border-bottom: 1px solid black;
+        color: black; }
+      .bottom .bottomdown .bottomdowntxt::after {
+        content: "";
+        display: block;
+        clear: both; }
+    .bottom .bottomdown::after {
+      content: "";
+      display: block;
+      clear: both; }
+    .bottom .bottomdown .microsoft {
+      vertical-align: middle;
+      font-size: 12px;
+      color: #616161; }

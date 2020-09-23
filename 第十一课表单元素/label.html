@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.l1{
+				width: 50px;
+				height: 50px;
+				background-color: #008000;
+				margin-top: 50px;
+				display: block;
+			}
+			.l2{
+				width: 50px;
+				height: 50px;
+				background-color: #008000;
+				display: block;
+				margin-top: 10px;
+			}
+			
+			.sex{
+				width: 15px;
+				height: 15px;
+				background: #0000FF;
+				display: inline-block;
+				margin-left:10px;
+			}
+			
+			input:checked+label{
+				background-color: red;
+			}
+			input{
+				display: none;
+			}
+			#wenjian{
+				display: none;
+			}
+			.wj{
+				width: 100px;
+				height: 20px;
+				background-color: red;
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- hover: 悬浮
+		check:点击了单选框或复选框 -->
+		手机<input type="radio" name="sim" id="s1"/>
+		电脑<input type="radio" name="sim" id="s2"/>
+		笔记本<input type="radio" name="sim" id="s3"/>
+		
+		<button id="btn" >btn</button>
+		<!-- label:
+			for需要跟一个元素的id进行绑定 一个id可以绑定多个for -->
+			<!-- 点击label相当于点击手机单选框 -->
+		<label for="s1" class="l1"></label>
+		<label for="btn" class="l2">按钮</label>
+		
+		
+		使用label修改单选框按钮
+		男:<input type="radio" name="sim" id="sex1"/>
+			<label for="sex1" class="sex"></label>
+		女:<input type="radio" name="sim" id="sex2"/>
+			<label for="sex2" class="sex"></label>
+			
+		<input type="file" id="wenjian">
+		<label for="wenjian" class="wj">请选择文件</label>
+		
+		<textarea rows="20" cols="10"></textarea>
+	</body>
+</html>

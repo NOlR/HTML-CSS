@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css"> 
+		/* 伪类 */
+		/* .zw:hover{
+			color: red;
+		} */
+		/* 高级选择器 */
+		
+		/*后代选择器 空格 */
+		.zw .nm {
+			height: 50px;
+			color: blue;
+		}
+		
+		/* 子类选择器 大于号> */
+		.father>.son{
+			color:red;
+			background-color: blue;
+			height: 50px;
+			margin-bottom: 50px;
+		}
+		
+		/* 相邻选择器 加号+ */
+		/*选中p:(前面是div的p标签;一定是紧跟(相邻)) */
+		div+p{
+			color: red;
+		}
+		
+		/* 兄弟选择器 波浪号(~) 只要在div下面的兄弟(同级)p标签都可以选中 */
+	/* 	div~p{
+			color: purple;
+		} */
+ 		/* p~div{
+			margin-bottom: 50px;
+			color:red;
+		} */
+		</style>
+	</head>
+	<body>
+		 后代选择器
+		 <div class="zw">
+			<p class="nm">123
+				<p class="wr">
+					夏若水
+				</p>
+			</p>
+			<p class="nm">123
+				<p class="wr">
+					Noir
+				</p>
+			</p>
+		</div>
+		<div class="nm">夏若水</div>
+		
+		子类选择器
+	<div class="father">
+			<div class="son">
+				儿子
+				<div class="son">
+					孙子
+				</div>
+			</div>
+				<div class="son">儿子</div>		
+		</div>
+		
+		<!-- 相邻选择器 -->
+			<p>p</p>
+		<div>div</div>
+			<p>p</p>
+			<p>p</p>
+		<div>div
+			<p>p</p>
+			<p>p</p>
+		</div> 
+			<p>p</p>
+	</body>
+</html>

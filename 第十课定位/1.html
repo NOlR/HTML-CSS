@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				position: relative;
+				width: 100px;
+				height: 100px;
+				background-color: #0000FF;
+				bottom: 10px;
+			}
+			.box1{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+			.con{
+				width: 300px;
+				height: 300px;
+				background-color: pink;
+				position: relative;
+				
+			}
+			.text{
+				width: 50px;
+				height: 50px;
+				background-color: green;
+				position: absolute;
+				right: 0px;
+				
+			}
+			.fixed{
+				width: 200px;
+				height: 200px;
+				background-color: #373737;
+				position: fixed;
+				right: 0px;
+				bottom: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+		<div class="box1"></div>
+		
+		父相子绝:父级相对定位,子级绝对定位
+		<div class="con">
+			<div class="text">
+				
+			</div>
+		</div>
+		<div class="fixed"></div>
+	</body>
+</html>
+object-fit:contain 等比缩放，显示全部图片
+
+object-fit:cover 等比缩放，铺满整个盒子
+
+定位样式
+1.相对定位
+	相对于原先的位置向左向右移动 (更多的是与绝对定位配合)
+2.绝对定位
+	相对于设置了对位的父级元素来定位，如果没有父级元素，或者父级元素没有定位，那就相对于当前窗口来定位
+3.固定定位
+	相对于当前视口来定位 永远不变
+
+z-index:层级
+	后飘起来的元素飘得最高
+	我们用过z-index样式来改变元素的层级关系
+	注意:同级比较 z-index大的就在上面
+	

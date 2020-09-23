@@ -1,0 +1,23 @@
+{
+  "id": "1699650",
+  "name": "壁纸网",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "76992",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "11749442",
+      "name": "定位",
+      "font_class": "dingwei",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    }
+  ]
+}

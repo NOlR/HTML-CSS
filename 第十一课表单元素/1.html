@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		action:提交地址
+		method:提交方式
+			get:不把提交的内容加密
+			post:加密提交的内容
+		input 
+			type:类型
+				text:文本输入框
+				password:密码
+				radio:单选框(name要一致)
+				checkbox:多选框(name也要一致)
+				submit:提交按钮
+				reset:重置按钮(变为初始状态)
+			name:名字(作为属性，传给后端)
+		<form action="http://www.baidu.com/" method="">
+			文本框 <input type="text" name="wd" value="1234212" placeholder="请输入内容"><br><!-- placeholder 提示框 value 里面的内容 -->
+			密码框 <input type="password" ><br>
+			数字框 <input type="number" ><br>
+			滑动块 <input type="range" min="0" max="100" step="10"><br>
+			日期 <input type="datetime-local"><br>
+			颜色 <input type="color" ><br>
+			选择文件 <input type="file" multiple><br>	<!-- multiple选中多个文件 -->
+			单选框:<br >
+			 男<input type="radio" name="sex"><br>
+			 女<input type="radio" name="sex"><br>
+			 多选框:<br>
+				1<input type="checkbox" name="num" value="1"><br>
+				2<input type="checkbox" name="num" value="2"><br>
+				3<input type="checkbox" name="num" value="3"><br>
+			 <input type="submit" value="提交">
+			 <input type="reset" value="重置" >
+			
+			
+		</form>
+	</body>
+</html>

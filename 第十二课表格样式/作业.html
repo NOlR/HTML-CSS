@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+		</title>
+		<style type="text/css">
+			.content{
+				margin: 100px auto;
+				width: 1200px;
+				height: 520px;
+				background-color: #57c8e7;
+				position: relative;
+			}
+			.left{
+					width: 730px;
+				    height: 520px;
+				    background: url(img/1.png) no-repeat -87px -7px
+			}
+			.right{
+				width: 340px;
+				height: 420px;
+				background-color: #f7eae9;
+				position: absolute;
+				right: 60px;
+				top: 50px;
+			}
+			.login{
+				
+				width: 280px;
+				margin: 35px auto;
+				padding: 1px;
+			}
+		
+			.usename,.password,.rem{
+				margin-top: 20px;
+				margin-left: 30px;
+			}
+			.rem::after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.usename>.uid,.password>.pwd{
+				display:inline-block;
+				vertical-align: middle;
+				height: 35px;
+				width: 180px;
+				font-size: 15px;
+			}
+			.usename>img,.password>img{
+				vertical-align: middle;
+			}
+			.rem{
+				font-size: 12px;
+			}
+			.rem>.remleft,.rem>.remright{
+				display: inline-block;
+			}
+			.rem>.remleft>input,.rem>.remleft>span{
+				vertical-align: middle;
+			}
+			
+			.remright a{
+				text-decoration: none;
+				color: #aaa;
+			}
+			.rem>.remright{
+				float: right;
+				padding-right: 30px;
+			}
+			.btn{
+				margin-top: 20px;
+				margin-left: 30px;
+				border: 0px;
+				width: 220px;
+				height: 45px;
+				background: linear-gradient(#fc1d40 0,#cb2837 100%);
+				
+			}
+			.bottom{
+				
+				width: 260px;
+				height: 70px;
+				border-top: 1px #ccc;
+				margin: 0 auto;
+			}
+			.bottom span{
+				font-size: 12px;
+			}
+			.bottom img{
+				margin-left: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<div class="left"></div>
+			<div class="right">
+				<div class="top">
+					<form class="login" action="" method="post">
+						<div class="usename">
+							<img src="./img/zhanghao.jpg" /><input type="text" class="uid" placeholder="用户名/邮箱地址/手机号"/>
+						</div>
+						<div class="password">
+							<img src="./img/mima.jpg" /><input type="password" class="pwd" placeholder="填写密码" />
+						</div>
+						<div class="rem">
+							<div class="remleft">
+								<input type="checkbox" />
+								<span>记住账号</span>
+							</div>
+							<div class="remright">
+								<a href="#">欢迎注册</a>
+								<a href="#">忘记密码?</a>
+							</div>
+						</div>
+						<input type="submit" value="登录"  class="btn"/>
+					</form>
+				</div>
+				<div class="bottom">
+					<span>合作网站账号登录:</span>
+					<img src="./img/weixin.png" />
+					<img src="./img/qqlogin.png" />
+					<img src="./img/taobao.png" />
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

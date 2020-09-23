@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 初始帧 */
+			.test{
+				width: 100px;
+				height: 100px;
+				background-color: #57C8E7;
+				transition-property: width,height ;		/* 哪个属性要改变 ,逗号隔开  所有则用all表示或默认 */
+				
+			}
+			/* 结束帧 */
+			
+			/* 100px慢慢过渡到200px 慢慢变成动画 */
+			.test:hover{
+				width: 400px;
+				height: 400px;
+				background-color: #2F0C38;
+				transition-duration: 3s;  /* 动画时间 */
+				transition-timing-function: ease ; /* 动画怎样运行 */
+											/* cubic-bezier()	贝塞尔曲线 */
+				transition-delay:1s ;	/* 延迟动画 */
+				/* transition-property: ;  选择要改变属性 */
+				 过度符合属性
+				 transition: all 3s linear;
+							属性 时间 如何运行
+				
+			}
+		</style>
+	</head>
+	<body>
+		短时间内连续播放多张静态的帧
+			一秒钟			人眼的机制: 变化超过50此每秒,人眼感觉不到是一张张张张的图片
+			播放16张 	
+			连贯的图片
+				
+			关键帧:24张---8张
+		<div class="test"></div>
+	</body>
+</html>

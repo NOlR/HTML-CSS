@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box1{
+				width: 200px;
+				height: 200px;
+				background-color: #0000FF;
+				border-top-left-radius: 50%;
+			}
+			.box2{
+				width: 200px;
+				height: 200px;
+				background: linear-gradient(red 0px,blue 200px);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			
+		</div>
+		<div class="box2">
+			
+		</div>
+	</body>
+</html>
+圆角样式
+border-radius: 50px
+相当于在块级元素的四个边角设置了四个小圆,每个小圆的半径都是50px
+		四个属性值
+Border-radius：50px 30px 80px 150px;
+	两个属性值：左上 右上 右下 左下
+	还可以接受百分比值
+	
+渐变
+linear-gradient(to top,   red     0px,          blue     200px);
+				方向 	开始颜色    开始位置   最后颜色	 结束位置
+			  从下往上
+				0 deg
+				角度
+		
+repeating-linear-gradient() 和 repeating-radial-gradient()。
+它们的工作方式跟前两者类似，只有一点不同：色标是无限循环重复的，直到填满整个背景。
+
+渐变色用于背景时，是以背景图片的形式展示的！！！！！！
+所以可以使用背景图片的所有样式特性，如大小，位置，基点，剪切等
+background:linear-gradient(45deg,black 50%,red 50%) top left/100px 100px no-repeat
+													  位置      大小			不重复

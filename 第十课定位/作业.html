@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.wrapper{
+				width: 1200px;
+			}
+			.fenlei{
+				display: inline-block;
+				width: 200px;
+				line-height: 50px;
+				font-size: 20px;
+				font-weight: 500;
+				text-align: center;
+				color: white;
+				background:linear-gradient(to right,#356fff 0px,#6eb4ff 200px);
+			}
+			.head{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				display: inline-block;
+			}
+			 .head li{
+				float: left;
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			.head li{
+				margin-left: 50px;
+				font-size: 19px;
+			}
+			.content{
+				width: 1200px;
+				height: 340px;
+				background : url(./img/1.png) no-repeat -400px 0;
+			}
+			.title{
+				width: 200px;
+				margin: 0;
+				padding: 0;
+			}
+			.title li{
+				width: 100%;
+				background-color:#272a38 ;
+				text-align: center;
+				line-height: 68px;
+				font-size: 20px;
+				font-weight: 500;
+				color: white;
+				position: relative;
+			}
+			.title>a{
+				text-decoration: none;
+			}
+			.title li>div{
+				width: 200px;
+				height: 200px;
+				background-color: green;
+				position: absolute;
+				left: 200px;
+				top: 0px;
+				display: none;
+			}
+			.title li:hover{
+				background-color: #464646;
+			}
+			.title li:hover>div{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+				<div class="fenlei">课程分类</div>
+				<ul class="head">
+						<li>首页</li>
+						<li>全部课程</li>
+						<li>客户端</li>
+						<li>关于我们</li>
+				</ul>
+			<div class="content">
+				<ul class="title">
+					<a href="#"><li>IT互联网<div ></div></li></a>
+					<a href="#"><li>设计创作<div ></div></li></a>
+					<a href="#"><li>实用外语<div ></div></li></a>
+					<a href="#"><li>兴趣艺术<div ></div></li></a>
+					<a href="#"><li>农业生产<div ></div></li></a>
+				</ul>
+			</div>
+		</div>
+			
+	</body>
+</html>

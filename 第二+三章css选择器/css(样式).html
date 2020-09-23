@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 内联样式
+			 相对于行间样式优点: 重用性  缺点:项目大,css太多，导致html内容太多-->
+			 <style type="text/css">
+				 /* 属性:值
+				 color:1.red blue green 
+					   2.十六进制6位数 或 3位数
+				       3.rgb() 括号里面3个值
+					   4.rgba() 括号里面4个值 前三个值与rgb()相同  第4个透明度(取值0~1)*/
+				 
+				 .box3{
+					 width: 200px;		/* 宽度 */
+					 height: 200px;		/* 高度 */
+					 background-color: #ccc;
+				 }
+				 
+				 /* x轴 水平方向 left right
+				 y轴 垂直方向 top  bottom */
+				 .talk{
+					 margin-left: 40px; 
+					 margin-top: 0px;
+					 margin-right: 0px;
+					 margin-bottom: 0px;
+				 }
+				 .tit{
+					 font-size: 16px; 		/* 文字大小 */
+					 font-family: "微软雅黑";  /* 字体 */
+				 }
+			 </style>
+			 
+		<!-- 外联样式 -->
+		<link rel="stylesheet" type="text/css" href="./css.css"/>   <!-- rel:声明当前文件与被引用文件之间的关系 href:文件地址 -->
+	</head>
+	<body>
+		<!-- 思路: 划分区域   css改样式,调位置   加内容 -->
+		<div class="nm" >qwq</div>							<!-- 行间样式  
+															缺点: 不能重复使用
+																  不美观-->
+		
+		<div class="box3">Noir</div>
+		
+		<p class="tit">女:</p>
+		<p class="talk">你在干嘛</p>
+		
+		<p class="tit">男:</p>
+		<p class="talk">玩</p>
+	</body>
+</html>

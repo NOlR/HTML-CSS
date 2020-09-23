@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css"> 
+		table{
+				
+/* 			border-collapse:collapse; */	/* 合并边框间距 */
+											 /* separate 分开间距 */
+		/* 	border-spacing: 10px; */	/* 边框间距 前提要分开间距 */
+		}
+		</style>
+	</head>
+	<body>
+		<!-- table:布局
+		
+		tr    row 行
+		td    	  单元格
+		th        标题 -->
+		thead  头部
+		tbody  身体
+		tfoot  底部
+		
+		/* 边框间距 */
+		<table border="1">
+			<tr>
+				<th>单</th>
+				<th>双</th>
+			</tr>
+			<tr>
+				<td colspan="2">1</td>
+				<!-- 跨列 -->
+				<!-- <td>2</td> -->
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>4</td>
+				<!-- rowspan 跨行 -->
+			</tr>
+		</table>
+	</body>
+</html>

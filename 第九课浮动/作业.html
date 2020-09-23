@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.wrapper{
+				width: 1200px;
+				height: 550px;
+				border: 1px solid #CCCCCC;
+				margin: 0 auto;
+			}
+			.title li,title{
+				margin: 0;
+				pading: 0;
+				list-style: none;
+			}
+			.title{
+				width:300px ;
+				margin: 0 auto;
+			}
+			.title::after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.title li{
+				display: block;
+				float: left;
+				width: 45px;
+				height: 25px;
+				margin-right: 10px;
+				border-right: 1px solid #CCC;
+				margin-top: 5px;
+			}
+			.title li+li+li+li+li{
+				border: 0px;
+			}
+			.conleft{
+				width: 540px;
+				float: left;
+			}
+			.conleft img{
+				float: left;
+			}
+			.conleft::after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.conmid{
+				float: left;
+				width: 230px;
+			}
+			.conmid img{
+				float: left;
+			}
+			.conright{
+				float: left;
+				width: 400px;
+			}
+			.conright img{
+				float: left;
+			}
+			
+			
+			
+			.content{
+				width: 900px;
+				background-color: #252526;
+			}
+			.content::after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.left{
+				float: left;
+				width: 150px;
+				margin-left: 100px;
+				
+			}
+			.left img{
+				float: left;
+				width: 70px;
+				height: 70px;
+				
+			}
+			.left h1{
+				float: left;
+				margin: 0;
+				padding: 0;
+				font-weight: 400;
+				line-height: 70px;
+				color: white;
+			}
+			.right{
+				float: left;
+			}
+			.con{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			.con li{
+				float: left;
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				line-height: 70px;
+				margin-right: 40px;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<ul class="title">
+				<li>护肤</li>
+				<li>彩妆</li>
+				<li>美发</li>
+				<li>美体</li>
+				<li>香氛</li>
+			</ul>
+			<div class="conleft">
+				<img src="./img/1.png" >
+				<img src="./img/2.png">
+				<img src="./img/3.png">
+			</div>
+			<div class="conmid">
+				<img src="./img/4.png" >
+				<img src="./img/5.png">
+				<img src="./img/6.png">
+			</div>
+			<div class="conright">
+				<img src="./img/7.png" >
+				<img src="./img/8.png">
+				<img src="./img/9.png">
+			</div>
+		</div>
+		
+		
+		<hr>
+		<div class="content">
+			<div class="left"><img src="./img/10.png"> <h1>微信</h1> </div>
+			<div class="right">
+				<ul class="con">
+					<li>首页</li>
+					<li>帮助</li>
+					<li>公众</li>
+					<li>微信</li>
+					<li>支付</li>
+					<li>网页版</li>
+					<li>表情</li>
+					<li>广告</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

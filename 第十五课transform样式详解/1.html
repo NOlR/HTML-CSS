@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.wrapper{
+				width: 400px;
+				height: 400px;
+				background-color: #CCCCCC;
+				margin: 100px auto;
+				perspective: 1000px;
+			}
+			/* transform:变化
+				指元素的变化
+				
+				变化方式:
+						1.旋转 rotate
+								X轴:左右		数值为度数(角度)
+								Y轴:上下
+								Z轴:中心
+						2.缩放 scale 
+								X轴:左右		
+								Y轴:上下		数值为倍数
+								Z轴:中心		0~1之间元素缩小(0看不见)
+											>1放大
+											<0元素倒置 -1~0之间元素缩小 小于-1元素放大
+								
+								
+						3.移动 translete  不会影响别的元素
+								X轴:左右
+								Y轴:上下
+								Z轴:前后
+						
+						4.倾斜 skew() 度数
+								X轴:逆时针
+								Y轴:顺时针
+			 */
+			.box{
+				width: 100px;
+				height: 100px;
+				background-color:lightgreen;
+				margin-top: 10px;
+				transform-style: preserve-3d;
+			}
+			.box:nth-child(1){
+				transform: translateX(45px) translateZ(100px);
+			}
+			.box:nth-child(2){
+				background-color: #0000FF;
+				transform: scaleX(2) scaleY(2) scaleZ(2);
+			}
+			.box:nth-child(3){
+				background-color: #3eff75;
+				transform: rotateX(0deg);
+			}
+			.box:nth-child(4){
+				background-color: #fa4eff;
+				transform: skewX(0deg);
+				transition: 10s ease ; 
+			}
+			.box:nth-child(3):hover{
+				transition: 5s linear; 
+				transform: rotatex(360deg);
+			}
+			.box:nth-child(4):hover{
+				
+				transform: skewX(360deg);
+			}
+			/* 在动画里设置margin影响其他元素 */
+			动画的性能优化
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="box">1</div>
+			<div class="box">2</div>
+			<div class="box">3</div>
+			<div class="box">4</div>
+		</div>
+	</body>
+</html>

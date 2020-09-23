@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/* .wrapper{
+				width: 500px;
+				height: 500px;
+				background-color: #CCCCCC;
+				padding: 50px;
+			}
+			.box{
+				margin: 150px auto;
+				width: 250px;
+				height: 250px;
+				background-color: #008000;
+				background-repeat: no-repeat;
+				background-image: url(./img/jnsj.jpg);
+				background-size: auto 70%;
+			} */
+			
+			/* .pic{
+				height: 300px;
+				width: 300px;
+				border: 40px dashed red;
+				padding: 50px;
+				background-color: #0000FF;
+				background-image:url(img/jnsj.jpg);
+				background-repeat: no-repeat;
+				background-origin: border-box;
+				background-clip: content-box;
+				
+			} */
+			
+			.text1{
+				width: 100px;
+				height: 100px;
+				background-color: #757575;
+				overflow: hidden; /* 超出部分隐藏 */
+				white-space: nowrap; /* 不换行 */
+				text-overflow:ellipsis /* 超出部分省略号 */
+			}
+			.text2{
+				margin-top: 10px;
+				width: 100px;
+				height: 100px;
+				background-color: #757575;
+				overflow: hidden; /* 超出部分隐藏 */
+				word-break: break-all; /* 一定换行 */
+				text-overflow:ellipsis /* 超出部分省略号 */
+				
+			}
+		</style>
+	</head>
+	<body>
+	<!-- 	<div class="wrapper"> 
+			<div class="box">
+				
+			</div>
+		</div> -->
+		
+		<!-- <div class="pic"></div> -->
+		
+		<div class="text1">的实力卡德加阿奎拉尼大大加快洒进来的尼大大加快洒进来的尼大大加快洒进来的</div>
+		
+		<div class="text2">1111111111111111111111111111111111</div>
+	</body>
+</html>
+背景样式：
+层级优先：content>border>background-image>background-color
+背景样式种类
+border边框
+background-color：背景色（可写英文、16进制、rgb、rgba）
+background-image：背景图片
+background-repeat：no-repeat；取消背景平铺
+background-attachment：fixed；背景样式固定不动，背景不会随元素滑动（需要放在滚动元素里面）
+
+/网页出现滚动条当body高度大于浏览器可视高度时出现/
+background-attachment：scroll；
+背景滚动/网页默认样式/
+
+background-attachment：local；相对于内容固定，背景滚动
+
+background-position-x：10px；
+background-position-y；10px；
+定位（x y轴偏移量 元素默认左上角 便宜大小用px 可为负值）
+background-position：x y；复合写法
+例：background-position：10px 20px；
+
+border(边框)在背景颜色之上
+background-repeat: no-repeat 照片重复
+改图片位置background-position x(水平) y(垂直)
+主要用于精灵图
+
+等比例缩小
+background-size-cover 整体铺满盒子
+图片等比例缩放直到刚好覆盖背景区域
+
+background-size-contain 显示完整的背景图片
+图片等比例缩放，直到有一条边触碰到边框就停止
+
+数值型 background-size 宽度 高度  auto 根据另外一个值缩放
+可以只写一个值 另外一个默认auto
+
+背景图片显示基点
+backgro-origin: content-box  padding-box  border-box
+conten-box 图片相对于内容左上角开始
+padding-box 背景图片从内边距左上角开始
+border-box 背景图片相对于边框左上角开始
+
+背景图片裁剪区域
+在背景图原始尺寸大于元素的时候讲图片进行裁剪，保证背景图片在哪个区域可见
+backgro-clip: content-box  padding-box  border-box
+contect-box 只显示内容区部分的背景图片
+padding-box 显示内容区和内边距部分的背景图片
+border-box 显示内容区、内边距和边框部分的图片

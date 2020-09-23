@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			input{
+				background-color: #008000;
+			}
+			
+			/* 属性选择器 	[xx="xxx"]
+				根据属性来选择
+				可以自定义属性
+			*/
+			input[type="password"]{
+				background-color: red;
+			}
+			/* 不写默认为所有该标签 
+				选中qwq^=""以引号内开头
+				选中qwq$=""以引号内结尾
+				选中qwq*=""括号内包含的内容
+				
+			*/
+			input[qwq*="00"]{
+				background-color: pink;
+			}
+			
+			
+			/* 高级选择器 结构类 */
+/* 				:first-child  选中第一个元素
+				:last-child   最后一个元素 
+				:nth-child(n)	第几个元素
+								n可以写表达式
+				 */
+/* 			.nav>li:first-child{
+				color: #0000FF;
+			} */
+			
+			/* .nav>li:last-child{
+				color: #ff77ed;
+			} */
+			
+			/* 正序 */
+			.nav>li:nth-child(2n){
+				background-color: #008000;
+			}
+			/* 倒序 */
+			.nav>li:nth-last-child(2n){
+				background-color: #008000;
+			}
+			.nav>li:nth-child(2n+1){
+				background-color: #3c2180;
+			}
+			
+			/* .oftype>li:nth-child(2n)
+			{
+				background-color: #252526;
+			} */
+			
+			/* 同类型中的第几个  顺序*/
+			.oftype>li:nth-of-type(2n)
+			{
+				background-color: #252526;
+			}
+			/* 倒序 */
+			.oftype>li:nth-last-of-type(2n)
+			{
+				background-color: #252526;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="nav">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+		<ul class="oftype">
+			<div>0</div>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+		<input qwq="001" />
+		<input qwq="002" />
+		账号:<input type="text" />
+		密码:<input type="password" />
+	</body>
+</html>
